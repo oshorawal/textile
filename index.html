@@ -30,7 +30,7 @@
         font-weight: 300;
       }
       .parallax {
-        background-image: url("/public/background-upscaled.jpg");
+        background-image: url("public/background-upscaled.jpg");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -133,7 +133,7 @@
         font-weight: 300;
       }
       .parallax-second {
-        background-image: url("/public/sofa-set-upscaled.jpg");
+        background-image: url("public/sofa-set-upscaled.jpg");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -329,27 +329,27 @@
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="product-card" onclick="openModal('Cushions')">
-            <img src="/public/cushion.jpg" alt="Cushion" />
+            <img src="public/cushion.jpg" alt="Cushion" />
             <div class="product-overlay">Cushion</div>
           </div>
           <div class="product-card" onclick="openModal('Rugs')">
-            <img src="/public/rugs.jpg" alt="Rug" />
+            <img src="public/rugs.jpg" alt="Rug" />
             <div class="product-overlay">Rug</div>
           </div>
           <div class="product-card" onclick="openModal('Baskets')">
-            <img src="/public/basket.jpg" alt="Basket" />
+            <img src="public/basket.jpg" alt="Basket" />
             <div class="product-overlay">Basket</div>
           </div>
           <div class="product-card" onclick="openModal('Throws')">
-            <img src="/public/throws.jpg" alt="Throw" />
+            <img src="public/throws.jpg" alt="Throw" />
             <div class="product-overlay">Throw</div>
           </div>
           <div class="product-card" onclick="openModal('Mats')">
-            <img src="/public/mats.jpg" alt="Mat" />
+            <img src="public/mats.jpg" alt="Mat" />
             <div class="product-overlay">Mat</div>
           </div>
           <div class="product-card" onclick="openModal('Poufs')">
-            <img src="/public/puffs.jpg" alt="Pouf" />
+            <img src="public/puffs.jpg" alt="Pouf" />
             <div class="product-overlay">Pouf</div>
           </div>
         </div>
@@ -409,7 +409,7 @@
           <!-- Tufting Machine -->
           <div class="product-card">
             <img
-              src="/public/services/Tufting_Machine.png"
+              src="public/services/Tufting_Machine.png"
               alt="Tufting Machine"
             />
             <h3 class="text-xl font-semibold text-gray-800">Tufting Machine</h3>
@@ -419,7 +419,7 @@
           <!-- Braiding Machine -->
           <div class="product-card">
             <img
-              src="/public/services/Braiding_Machine.png"
+              src="public/services/Braiding_Machine.png"
               alt="Braiding Machine"
             />
             <h3 class="text-xl font-semibold text-gray-800">
@@ -431,7 +431,7 @@
           <!-- Embroidery Machine -->
           <div class="product-card">
             <img
-              src="/public/services/Embroidery_Machine.png"
+              src="public/services/Embroidery_Machine.png"
               alt="Embroidery Machine"
             />
             <h3 class="text-xl font-semibold text-gray-800">
@@ -443,7 +443,7 @@
           <!-- In-House Dyeing -->
           <div class="product-card">
             <img
-              src="/public/services/InHouse_Dyeing.png"
+              src="public/services/InHouse_Dyeing.png"
               alt="In-House Dyeing"
             />
             <h3 class="text-xl font-semibold text-gray-800">In-House Dyeing</h3>
@@ -452,42 +452,42 @@
 
           <!-- Stitching -->
           <div class="product-card">
-            <img src="/public/services/Stitching.png" alt="Stitching" />
+            <img src="public/services/Stitching.png" alt="Stitching" />
             <h3 class="text-xl font-semibold text-gray-800">Stitching</h3>
             <p>Accurate stitching for flawless finishes.</p>
           </div>
 
           <!-- Cutting -->
           <div class="product-card">
-            <img src="/public/services/Cutting.png" alt="Cutting" />
+            <img src="public/services/Cutting.png" alt="Cutting" />
             <h3 class="text-xl font-semibold text-gray-800">Cutting</h3>
             <p>Precision cutting for all material types.</p>
           </div>
 
           <!-- Finishing -->
           <div class="product-card">
-            <img src="/public/services/Finishing.png" alt="Finishing" />
+            <img src="public/services/Finishing.png" alt="Finishing" />
             <h3 class="text-xl font-semibold text-gray-800">Finishing</h3>
             <p>Perfect finishing touches for a polished look.</p>
           </div>
 
           <!-- Packaging -->
           <div class="product-card">
-            <img src="/public/services/Packaging.png" alt="Packaging" />
+            <img src="public/services/Packaging.png" alt="Packaging" />
             <h3 class="text-xl font-semibold text-gray-800">Packaging</h3>
             <p>Safe and attractive packaging solutions.</p>
           </div>
 
           <!-- Frame Loom -->
           <div class="product-card">
-            <img src="/public/services/Frameloom.png" alt="Frame Loom" />
+            <img src="public/services/Frameloom.png" alt="Frame Loom" />
             <h3 class="text-xl font-semibold text-gray-800">Frame Loom</h3>
             <p>Versatile looms for custom designs.</p>
           </div>
 
           <!-- Pit Loom -->
           <div class="product-card">
-            <img src="/public/services/Pitloom.png" alt="Pit Loom" />
+            <img src="public/services/Pitloom.png" alt="Pit Loom" />
             <h3 class="text-xl font-semibold text-gray-800">Pit Loom</h3>
             <p>Traditional weaving techniques with precision.</p>
           </div>
@@ -717,7 +717,7 @@
                 "flex-shrink-0 w-full h-auto flex items-center justify-center";
 
               const img = document.createElement("img");
-              img.src = `/public/${category}/${subfolder.replace(
+              img.src = `public/${category}/${subfolder.replace(
                 / /g,
                 "_"
               )}/${image}`;
