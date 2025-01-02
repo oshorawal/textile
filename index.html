@@ -29,7 +29,83 @@
         font-family: "Poppins", sans-serif;
         font-weight: 300;
       }
+
+      /* Parallax Section */
       .parallax {
+        background-image: url("public/background-upscaled.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .custom-box {
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 4px solid white;
+        box-shadow: 0 0 0 2px #7a6c3e inset;
+        padding: 2rem;
+        max-width: 90%; /* Use a percentage width for responsiveness */
+        text-align: center;
+        margin: 0 auto; /* Center the box horizontally */
+        overflow-wrap: break-word; /* Prevent content from overflowing */
+      }
+
+      @media (max-width: 768px) {
+        .custom-box {
+          padding: 1.5rem; /* Reduce padding for smaller screens */
+          max-width: 95%; /* Reduce width to avoid overflow */
+        }
+
+        .custom-box h1 {
+          font-size: 1.8rem; /* Adjust font size */
+        }
+
+        .custom-box p {
+          font-size: 0.9rem; /* Smaller text for better readability */
+        }
+      }
+
+      .custom-box h1 {
+        font-size: 2rem;
+        color: #7a6c3e;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .custom-box p {
+        font-size: 1rem;
+        color: #7a6c3e;
+        letter-spacing: 2px;
+        margin-top: 1rem;
+      }
+
+      /* Responsive Styles for Mobile */
+      @media (max-width: 768px) {
+        .parallax {
+          background-size: cover;
+          background-attachment: scroll; /* Fixed attachment can cause issues on mobile */
+          height: auto;
+          padding: 4rem 2rem; /* Add padding for content */
+        }
+
+        .custom-box {
+          max-width: 90%; /* Scale down for smaller screens */
+          padding: 1.5rem;
+        }
+
+        .custom-box h1 {
+          font-size: 1.5rem; /* Smaller font for mobile */
+        }
+
+        .custom-box p {
+          font-size: 0.9rem; /* Adjust font size */
+        }
+      }
+      /* .parallax {
         background-image: url("public/background-upscaled.jpg");
         background-attachment: fixed;
         background-position: center;
@@ -62,7 +138,7 @@
         border: none;
         border-top: 1px solid #7a6c3e;
         margin: 1.5rem 0;
-      }
+      } */
       .product-card {
         position: relative;
         overflow: hidden;
